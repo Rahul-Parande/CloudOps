@@ -1,0 +1,68 @@
+@media (max-width: 650px) {
+  .main-content {
+    width: calc(100% - 58px);
+    min-width: 0;
+  }
+
+  .workspace-switcher > div:not(.workspace-icon) {
+    display: none;
+  }
+}
+
+.filter-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.recommendation {
+  cursor: pointer;
+}
+
+.recommendation:hover {
+  background: #fbfdf8;
+}
+
+.recommendation-modal {
+  width: min(420px, calc(100% - 32px));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 27px;
+  color: var(--ink);
+  box-shadow: 0 20px 60px rgba(31, 48, 34, .18);
+}
+
+.recommendation-modal::backdrop {
+  background: rgba(25, 35, 28, .28);
+}
+
+.recommendation-modal h2 {
+  font-family: 'Space Grotesk';
+  font-size: 20px;
+  margin: 0 28px 12px 0;
+}
+
+.recommendation-modal #modal-copy {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 12px;
+}
+
+.modal-saving {
+  color: #5b7d2d;
+  font: 600 14px 'Space Grotesk';
+  margin: 20px 0;
+}
+
+.modal-close {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 23px;
+  position: absolute;
+  right: 17px;
+  top: 13px;
+}
